@@ -3,7 +3,7 @@ public class Soft {
 	public static void main (String []args) {
 		fibonaci(5);
 		esprimo(5);
-		cuadrado();
+		imprimeFactorial(3);
 	}
 	public int fibonaci(int n){
 	  if(n==1 || n==2) {
@@ -33,6 +33,16 @@ Public void esprimo(int num){
 	
 	}
 
+}
+
+public static int factorial (int n){
+    if (n==0) { System.out.println ("Caso base"); return 1;}
+    else{
+        System.out.println ("Recursión");
+        return n*factorial(n-1);}
+}
+public void imprimeFactorial(int n){
+    System.out.println (factorial(n));
 }
 
 }
