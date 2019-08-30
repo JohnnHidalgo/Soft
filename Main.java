@@ -1,11 +1,13 @@
-public class Soft {
+public class Main {
 
-	public static void main (String []args) {
-		fibonaci(5);
+    public static void main(String[] args) {
+		
+		System.out.println(fibonaci(5));
 		esprimo(5);
 		imprimeFactorial(3);
 	}
-	public int fibonaci(int n){
+	
+	public static int fibonaci(int n){
 	  if(n==1 || n==2) {
 	    return 1;
 	  }
@@ -15,7 +17,7 @@ public class Soft {
 	}
 
 
-Public void esprimo(int num){
+public static void esprimo(int num){
 	int cont=0;
 	int p=1;
 	for(int i=1;i<=num;i++){
@@ -25,24 +27,24 @@ Public void esprimo(int num){
 	} 
 	
 	if(cont==2){
-		System.out.println(“Es primo”)
+		System.out.println("Es primo");
 	
 	}
 	else{
-		System.out.println(“No es primo”)
+		System.out.println("No es primo");
 	
 	}
 
 }
 
 public static int factorial (int n){
-    if (n==0) { System.out.println ("Caso base"); return 1;}
+    if (n==0) { return 1;}
     else{
-        System.out.println ("Recursión");
         return n*factorial(n-1);}
 }
-public void imprimeFactorial(int n){
+public static void imprimeFactorial(int n){
     System.out.println (factorial(n));
 }
 
 }
+
